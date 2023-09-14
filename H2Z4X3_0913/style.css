@@ -1,6 +1,7 @@
 body{
 
-    background-color: aquamarine
+    background-color: aquamarine;
+    background-color: pink;
 }
 
 
@@ -17,8 +18,7 @@ body{
     border-width: 5px;
     border-style: dashed;
     text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
+  
     margin-bottom: 1%;
     
 
@@ -41,15 +41,75 @@ body{
     
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 #section #imgID1{
 
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 40%;
     height: auto;
+
 }
+
+/*
+#section #buttonID{
+
+    background-color: #4CAF50; /* Green */
+    /*
+    border: 2px;
+    border-color: black;
+    border-style: dashed;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+
+    
+
+}
+*/
+
+
+#button1 {
+  position: relative;
+  background-color: black;
+  border: none;
+  border-style: initial;
+  border-radius: 80%;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 1%;
+  width: 30%;
+  margin-top: 2%;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button1:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#button1:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
