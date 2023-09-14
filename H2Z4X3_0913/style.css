@@ -1,7 +1,10 @@
 body{
 
     background-color: aquamarine;
-    background-color: pink;
+    background-color: rgb(218, 160, 170);
+   
+    background-image: url("sources/background.jpg");
+    background-color: #cccccc;
 }
 
 
@@ -14,7 +17,8 @@ body{
     /*border-color: black; */
     text-align: center;
     position: relative;
-    border-radius: 5%;
+    border-color: white;
+    border-radius: 60%;
     border-width: 5px;
     border-style: dashed;
     text-align: center;
@@ -23,6 +27,10 @@ body{
     
 
 }
+
+
+
+
 
 #section{
     background-color: azure;
@@ -34,7 +42,7 @@ body{
     border-color: black;
     border-radius: 10%;
     border-width: 5px;
-    border-style: dashed;
+    
     text-align: center;
    
 
@@ -52,25 +60,7 @@ body{
 
 }
 
-/*
-#section #buttonID{
 
-    background-color: #4CAF50; /* Green */
-    /*
-    border: 2px;
-    border-color: black;
-    border-style: dashed;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px; 
-
-    
-
-}
-*/
 
 
 #button1 {
@@ -111,5 +101,27 @@ body{
   transition: 0s
 }
 
+#section #contentSection{
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    font-size: 18px;
+    width: 70%;
+    
+    margin-top: 5%;
+
+    text-align: center;
+}
+
+#section #gifID{
+
+    flex-basis: 40%;
+    padding-left: 10%;
+    width: 40%;
+    height: auto;
+
+}
 
