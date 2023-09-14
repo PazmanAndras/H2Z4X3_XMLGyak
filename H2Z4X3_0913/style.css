@@ -125,3 +125,33 @@ body{
 
 }
 
+h2{
+    margin-top: 3%;
+    padding-top: 3%;
+    border-style: groove;
+    border-color: black;
+    border-bottom: 2px;
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+}
+
+footer{
+
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    size: 15ex;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+    width: 60%;
+  } 
