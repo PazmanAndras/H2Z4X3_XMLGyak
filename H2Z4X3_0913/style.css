@@ -44,6 +44,7 @@ body{
     border-width: 5px;
     
     text-align: center;
+    
    
 
     
@@ -110,10 +111,11 @@ body{
     margin: auto;
     font-size: 18px;
     width: 70%;
-    
+    line-height: 1.5;
     margin-top: 5%;
 
-    text-align: center;
+    text-align: justify;
+    /*text-align: center; */
 }
 
 #section #gifID{
