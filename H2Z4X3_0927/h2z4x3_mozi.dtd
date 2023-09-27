@@ -1,0 +1,12 @@
+<!ELEMENT mozi (film)>
+<!ELEMENT film (rendezo,szines,iro)>
+<!ATTLIST film id NMTOKEN #REQUIRED>
+<!ATTLIST film mufaj NMTOKEN #REQUIRED>
+<!ELEMENT rendezo EMPTY>
+<!ATTLIST rendezo id NMTOKEN #REQUIRED>
+<!ATTLIST rendezo nev NMTOKEN #REQUIRED>
+<!ELEMENT szines EMPTY>
+<!ATTLIST szines id NMTOKEN #REQUIRED>
+<!ATTLIST szines nev NMTOKEN #REQUIRED>
+<!ELEMENT iro EMPTY>
+<!ATTLIST iro id NMTOKEN #REQUIRED>
