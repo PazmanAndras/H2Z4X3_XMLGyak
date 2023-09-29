@@ -1,0 +1,56 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<! -- H2Z4X3 -->
+
+<subjectstimetable>
+
+
+	<major> </major>
+	<specialization> </specialization>
+
+	<subjectname id="01" type="lecture" >
+		<id></id>
+		<coursname></coursname>
+		<classroom> 
+				
+			<building> </building
+			<room> </room>
+					
+		</classroom>		
+		<teacher> </teacher>
+		<period> 
+		    
+		    <day></day>
+		    <startTime></startTime>
+                    <endTime></endTime>
+
+		</period>
+
+	</subjectname>
+	
+	<subjectname id="02" type="exercise" >
+		
+			<id></id>
+			<coursname></coursname>
+			<classroom> 
+				
+			    <building> </building
+			    <room> </room>
+					
+			</classroom>		
+			<teacher> </teacher>
+		
+			<period> 
+		    
+		   	     <day></day>
+		    	     <startTime></startTime>
+                             <endTime></endTime>
+
+		        </period>
+
+	</subjectname>
+
+
+
+</subjectstimetable>
