@@ -3,31 +3,6 @@
 <!DOCTYPE mozi SYSTEM "h2z4x3_mozi.dtd">
 
 
-
-
-<!DOCTYPE mozi [
-
-<!ELEMENT mozi (film*)>
-<!ELEMENT film (rendezo+, szines+, iro+)>
-<!ATTLIST film id CDATA #REQUIRED
-    mufaj (horror | comedy | drama) #REQUIRED
->
-<!ELEMENT rendezo EMPTY> 
-<!ATTLIST rendezo
-    id CDATA #REQUIRED
-    nev CDATA #REQUIRED
->
-<!ELEMENT szines EMPTY>
-<!ATTLIST szines
-    id CDATA #REQUIRED
-    nev CDATA #REQUIRED
->
-<!ELEMENT iro EMPTY>
-<!ATTLIST iro
-    id CDATA #REQUIRED
->
-]>
-
 <!-- folytatas-->
 
 
