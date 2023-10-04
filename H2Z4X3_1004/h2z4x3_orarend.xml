@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- 
-<orarend  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="BL_orarend.xsd">
--->
+<!DOCTYPE H2Z4X3_orarend SYSTEM "orarend_dtd_v2.dtd">
+<?xml-model href="orarend_dtd_v2.dtd" type="application/xml-dtd"?>
 
-<H2Z4X3_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="h2z4x3_orarend_v0.xsd" >
-    <ora id="1" tipus="elmélet">
+<H2Z4X3_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="h2z4x3_orarend_v0.xsd">
+    <ora id="1"
+        tipus="elmélet">
         <targy>Fizika II.</targy>
         <idopont>
             <nap>hétfő</nap>
@@ -16,7 +17,8 @@
         <oktato>Pszota Gábor</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="2" tipus="gyakorlat">
+    <ora id="2"
+        tipus="gyakorlat">
         <targy>Fizika II.</targy>
         <idopont>
             <nap>hétfő</nap>
@@ -27,7 +29,8 @@
         <oktato>Pszota Gábor</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="3" tipus="elmélet">
+    <ora id="3"
+        tipus="elmélet">
         <targy>Web technológiák 1</targy>
         <idopont>
             <nap>hétfő</nap>
@@ -38,7 +41,8 @@
         <oktato>Agárdi Anita</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="4" tipus="gyakorlat">
+    <ora id="4"
+        tipus="gyakorlat">
         <targy>Web technológiák 1</targy>
         <idopont>
             <nap>hétfő</nap>
@@ -49,7 +53,8 @@
         <oktato>Agárdi Anita</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="5" tipus="elmélet">
+    <ora id="5"
+        tipus="elmélet">
         <targy>Mesterséges intelligencia</targy>
         <idopont>
             <nap>kedd</nap>
@@ -60,7 +65,8 @@
         <oktato>Kunné Dr. Tamás Judit</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="6" tipus="elmélet">
+    <ora id="6"
+        tipus="elmélet">
         <targy>Adatkezelés XML-ben</targy>
         <idopont>
             <nap>kedd</nap>
@@ -71,7 +77,8 @@
         <oktato>Dr. Bednarik László</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="7" tipus="elmélet">
+    <ora id="7"
+        tipus="elmélet">
         <targy>Webes alkalmazások</targy>
         <idopont>
             <nap>kedd</nap>
@@ -82,7 +89,8 @@
         <oktato>Dr. Árvai László</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="8" tipus="gyakorlat">
+    <ora id="8"
+        tipus="gyakorlat">
         <targy>Webes alkalmazások</targy>
         <idopont>
             <nap>kedd</nap>
@@ -93,7 +101,8 @@
         <oktato>Dr. Árvai László</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="9" tipus="gyakorlat">
+    <ora id="9"
+        tipus="gyakorlat">
         <targy>Adatkezelés XML-ben</targy>
         <idopont>
             <nap>szerda</nap>
@@ -104,7 +113,8 @@
         <oktato>Dr. Bednarik László</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="10" tipus="elmélet">
+    <ora id="10"
+        tipus="elmélet">
         <targy>Integrált vállalati rendszerek</targy>
         <idopont>
             <nap>szerda</nap>
@@ -115,7 +125,8 @@
         <oktato>Dr. Samad Dadvandipour</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="11" tipus="gyakorlat">
+    <ora id="11"
+        tipus="gyakorlat">
         <targy>Integrált vállalati rendszerek</targy>
         <idopont>
             <nap>szerda</nap>
@@ -126,7 +137,8 @@
         <oktato>Kulcsárné Dr. Forrai Mónika</oktato>
         <szak>G3BIW</szak>
     </ora>
-    <ora id="12" tipus="gyakorlat">
+    <ora id="12"
+        tipus="gyakorlat">
         <targy>Mesterséges intelligencia</targy>
         <idopont>
             <nap>csütörtök</nap>

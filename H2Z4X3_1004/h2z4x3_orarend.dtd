@@ -1,0 +1,4 @@
+<!ELEMENT h2z4x3_orarend (#PCDATA)>
+
+<!ATTLIST ora id CDATA #REQUIRED>
+<!ATTLIST ora tipus  ID #REQUIRED>
