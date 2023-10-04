@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<H2Z4X3_orarend>
+<!-- 
+<orarend  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="BL_orarend.xsd">
+-->
+
+<H2Z4X3_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="h2z4x3_orarend_v0.xsd" >
     <ora id="1" tipus="elmélet">
         <targy>Fizika II.</targy>
         <idopont>
