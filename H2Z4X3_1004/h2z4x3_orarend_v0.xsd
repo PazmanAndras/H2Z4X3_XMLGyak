@@ -28,7 +28,7 @@
             <xs:element name="ig" type="idopontOraTipus"/>
         </xs:sequence>
     </xs:complexType>
-
+k
     <xs:simpleType name="napTipus">
         <xs:restriction base="xs:string">
             <xs:enumeration value="hetfo"/>
