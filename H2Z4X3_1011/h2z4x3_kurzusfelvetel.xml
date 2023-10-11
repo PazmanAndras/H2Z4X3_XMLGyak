@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<kurzusfelvetel tanev="2023/2024_1" egyetem="ME" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <tanev>2023</tanev>
+    <egyetem>ME</egyetem>
+    <hallgato id = "H5Z116">
+        <hnev>Kis Janos </hnev>
+        <szulev>2000-01-01</szulev>
+        <szak evf="5">Programtervező informatikus</szak>
+    </hallgato>
+
+    <kurzusok>
+
+        <kurzus id="GEFIT102">
+            <kurzusnev>Fizika II.</kurzusnev>
+            <kredit>4</kredit>
+            <hely>XIII</hely>
+            <idopont>Hetfő 8:00 - 10:00</idopont>
+            <oktato>Pszota Gábor</oktato>
+        </kurzus>
+
+        <kurzus id = " GEAIL-102" >
+            <kurzusnev >Algoritmusok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>102</hely>
+            <idopont>14:00-16:00</idopont>
+            <oktato>Dr. Novák</oktato>
+            <jovahagyas>igen</jovahagyas>
+        </kurzus>
+
+        <kurzus id = " GEAIL-303" jovahagyas="igen">
+            <kurzusnev >Algoritmusok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>102</hely>
+            <idopont>14:00-16:00</idopont>
+            <oktato>Dr. Novák</oktato>
+            <jovahagyas>igen</jovahagyas>
+        </kurzus>
+
+        <kurzus id = " GEAIL-303" nyelv ="angol" >
+            <kurzusnev >Algoritmusok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>102</hely>
+            <idopont>14:00-16:00</idopont>
+            <oktato>Dr. Novák</oktato>
+            <jovahagyas>igen</jovahagyas>
+        </kurzus>
+
+
+    </kurzusok>
+</kurzusfelvetel>
