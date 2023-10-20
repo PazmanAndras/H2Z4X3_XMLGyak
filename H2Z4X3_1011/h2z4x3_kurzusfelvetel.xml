@@ -2,8 +2,7 @@
 
 
 <kurzusfelvetel tanev="2023/2024_1" egyetem="ME" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
-    <tanev>2023</tanev>
-    <egyetem>ME</egyetem>
+
     <hallgato id = "H5Z116">
         <hnev>Kis Janos </hnev>
         <szulev>2000-01-01</szulev>
