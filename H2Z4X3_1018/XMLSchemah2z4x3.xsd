@@ -2,6 +2,9 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+
+    <!-- Egyszerű típusok kigyűjtése, saját típusok meghatározása, megszorítás -->
+
     <xs:element name="név" type="xs:string" />
     <xs:element name="cég" type="xs:string" />
     <xs:element name="év" type="xs:gYear" />
@@ -53,7 +56,7 @@
    
  
 
-  
+    <!--Komplex típusokhoz saját típus meghatározása, sorrendiség, számosság etc. --> 
     <xs:complexType name="fesztiválTípus">    <!-- Komplex típusokhoz sajat tipus -->
         <xs:sequence>
             <xs:element ref="név" />
@@ -148,6 +151,7 @@
             </xs:sequence>
         </xs:complexType>
 
+        <!-- Elsődleges kulcsok --> 
         
         <xs:key name="fesztivál_kulcs">     <!-- Primari keys -->
             <xs:selector xpath="fesztivál"/>
