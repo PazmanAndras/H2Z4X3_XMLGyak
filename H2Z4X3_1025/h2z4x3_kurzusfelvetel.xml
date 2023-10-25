@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 
-<!DOCTYPE kurzusfelvetel SYSTEM "PA_kurzusfelvetel.dtd">
 
-<kurzusfelvetel tanev="2022_2024 I." egyetem="ME">
+<kurzusfelvetel tanev="2023_2024 I." egyetem="ME">
 
 	<hallgato id="H2Z4X3">
 		<hnev>Pázmán András</hnev>
-		<szulev>2001-08-11</szulev>
+		<szulev>2002-05-03</szulev>
 		<szak evf="5">Mérnökinformatikus</szak>
 	</hallgato>
 
 	<kurzusok>
+
+        <kurzus id="GEFIT-12">
+			<kurzusnev>Fizika II.</kurzusnev>
+			<kredit>4</kredit>
+			<hely>XXX. előadó</hely>
+			<idopont>Hétfő 8:00-10:00</idopont>
+			<oktato>Dr. Pszota Gábor</oktato>		
+		</kurzus>
 		<kurzus id="GEIAL322-B">
 			<kurzusnev>Adatkezelés XML-ben</kurzusnev>
 			<kredit>5</kredit>
 			<hely>XXXII. előadó</hely>
-			<idopont>Kedd 12:00-13:00</idopont>
+			<idopont>Kedd 12:00-14:00</idopont>
 			<oktato>DR. Bednarik László</oktato>		
 		</kurzus>
 		<kurzus id="GEIAL331-B" jovahagyas="igen">
@@ -34,4 +42,4 @@
 			<oraado>Oraado Otto</oraado>
 		</kurzus>
 	<kurzusok>	
-</kurzusfelvetel>	
+</kurzusfelvetel>
