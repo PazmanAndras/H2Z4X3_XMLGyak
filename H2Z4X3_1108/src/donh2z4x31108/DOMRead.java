@@ -32,17 +32,32 @@ public class DOMRead {
 	         
 	         for (int temp = 0; temp < nList.getLength(); temp++) {
 	            Node nNode = nList.item(temp);
-	            System.out.println("\nCurrent Element :" + nNode.getNodeName());
+	            //System.out.println("\nCurrent Element :" + nNode.getNodeName());
+	            System.out.println(" ");
 	            
 	            if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 	               Element eElement = (Element) nNode;
+	               System.out.println("ID: " + eElement.getAttribute("id"));
 	               System.out.println("Tipus:  " 
-	                  + eElement.getAttribute("tipus"));
+	                  + eElement.getAttribute("tipus") );
+	               System.out.println("Targy : " 
+	 	                  + eElement
+	 	                  .getElementsByTagName("targy")
+	 	                  .item(0)
+	 	                  .getTextContent());
+	               /*
 	               System.out.println("Idopont : " 
 	                  + eElement
 	                  .getElementsByTagName("idopont")
 	                  .item(0)
 	                  .getTextContent());
+	               */
+	               System.out.println("Idopont : " 
+	 	                  + eElement
+	 	                  .getElementsByTagName("nap")
+	 	                  .item(0)
+	 	                  .getTextContent() + " "+ eElement .getElementsByTagName("tol") .item(0) .getTextContent() + " - "+eElement .getElementsByTagName("ig") .item(0) .getTextContent() );
+	               
 	               System.out.println("Helyszin : " 
 	                  + eElement
 	                  .getElementsByTagName("helyszin")
