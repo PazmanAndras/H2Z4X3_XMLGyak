@@ -37,10 +37,10 @@ public class DOMRead {
 	            
 	            if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 	               Element eElement = (Element) nNode;
-	               System.out.println("ID: " + eElement.getAttribute("id"));
+	               System.out.println("  ID: " + eElement.getAttribute("id"));
 	               System.out.println("Tipus:  " 
 	                  + eElement.getAttribute("tipus") );
-	               System.out.println("Targy : " 
+	               System.out.println("  Targy : " 
 	 	                  + eElement
 	 	                  .getElementsByTagName("targy")
 	 	                  .item(0)
@@ -52,23 +52,23 @@ public class DOMRead {
 	                  .item(0)
 	                  .getTextContent());
 	               */
-	               System.out.println("Idopont : " 
+	               System.out.println("  Idopont : " 
 	 	                  + eElement
 	 	                  .getElementsByTagName("nap")
 	 	                  .item(0)
 	 	                  .getTextContent() + " "+ eElement .getElementsByTagName("tol") .item(0) .getTextContent() + " - "+eElement .getElementsByTagName("ig") .item(0) .getTextContent() );
 	               
-	               System.out.println("Helyszin : " 
+	               System.out.println("  Helyszin : " 
 	                  + eElement
 	                  .getElementsByTagName("helyszin")
 	                  .item(0)
 	                  .getTextContent());
-	               System.out.println("Oktato : " 
+	               System.out.println("  Oktato : " 
 	                  + eElement
 	                  .getElementsByTagName("oktato")
 	                  .item(0)
 	                  .getTextContent());
-	               System.out.println("Szak : " 
+	               System.out.println("  Szak : " 
 	                  + eElement
 	                  .getElementsByTagName("szak")
 	                  .item(0)
