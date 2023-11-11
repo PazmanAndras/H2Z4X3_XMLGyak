@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<H2Z4X3_autokolcsonzo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <!-- TELEP -->
+    <telep TELEP_ID = "">
+        <kapacitas></kapacitas>  
+        <cim>
+            <tekepülés> </tekepülés>
+            <utca> </utca>
+            <házszám> </házszám>
+       </cim>
+       <beosztas> </beosztas>
+    </telep>
+
+    <telep TELEP_ID = "">
+        <kapacitas></kapacitas>  
+        <cim>
+            <tekepülés> </tekepülés>
+            <utca> </utca>
+            <házszám> </házszám>
+       </cim>
+       <beosztas> </beosztas>
+    </telep>
+
+    <telep TELEP_ID = "">
+        <kapacitas></kapacitas>  
+        <cim>
+            <tekepülés> </tekepülés>
+            <utca> </utca>
+            <házszám> </házszám>
+       </cim>
+       <beosztas> </beosztas>
+    </telep>
+
+    <telep TELEP_ID = "">
+        <kapacitas></kapacitas>  
+        <cim>
+            <tekepülés> </tekepülés>
+            <utca> </utca>
+            <házszám> </házszám>
+       </cim>
+       <beosztas> </beosztas>
+    </telep>
+
+    <telep TELEP_ID = "">
+        <kapacitas></kapacitas>  
+        <cim>
+            <tekepülés> </tekepülés>
+            <utca> </utca>
+            <házszám> </házszám>
+       </cim>
+       <beosztas> </beosztas>
+    </telep>
+
+    <!-- TULAJDONOS-->
+    <tulajdonos TUL_ID="" TUL_TELEP="" >
+        <nev> </nev>
+        <telszam> </telszam>
+        <adoszam> </adoszam>
+        <bevetel> </bevetel>
+    </tulajdonos>
+
+    <tulajdonos TUL_ID="" TUL_TELEP="" >
+        <nev> </nev>
+        <telszam> </telszam>
+        <adoszam> </adoszam>
+        <bevetel> </bevetel>
+    </tulajdonos>
+
+    <tulajdonos TUL_ID="" TUL_TELEP="" >
+        <nev> </nev>
+        <telszam> </telszam>
+        <adoszam> </adoszam>
+        <bevetel> </bevetel>
+    </tulajdonos>
+
+    <tulajdonos TUL_ID="" TUL_TELEP="" >
+        <nev> </nev>
+        <telszam> </telszam>
+        <adoszam> </adoszam>
+        <bevetel> </bevetel>
+    </tulajdonos>
+
+    <tulajdonos TUL_ID="" TUL_TELEP="" >
+        <nev> </nev>
+        <telszam> </telszam>
+        <adoszam> </adoszam>
+        <bevetel> </bevetel>
+    </tulajdonos>
+
+
+    <!-- AUTOK-->
+    <autok AUTO_ID="" AUTO_TELEP="" >
+        <rendszam></rendszam>
+        <modell></modell>
+        <alvázszám></alvázszám>
+        <gyártásiév></gyártásiév>
+    </autok>
+
+    <autok AUTO_ID="" AUTO_TELEP="" >
+        <rendszam></rendszam>
+        <modell></modell>
+        <alvázszám></alvázszám>
+        <gyártásiév></gyártásiév>
+    </autok>
+
+    <autok AUTO_ID="" AUTO_TELEP="" >
+        <rendszam></rendszam>
+        <modell></modell>
+        <alvázszám></alvázszám>
+        <gyártásiév></gyártásiév>
+    </autok>
+
+    <autok AUTO_ID="" AUTO_TELEP="" >
+        <rendszam></rendszam>
+        <modell></modell>
+        <alvázszám></alvázszám>
+        <gyártásiév></gyártásiév>
+    </autok>
+
+    <autok AUTO_ID="" AUTO_TELEP="" >
+        <rendszam></rendszam>
+        <modell></modell>
+        <alvázszám></alvázszám>
+        <gyártásiév></gyártásiév>
+    </autok>
+
+    <autok AUTO_ID="" AUTO_TELEP="" >
+        <rendszam></rendszam>
+        <modell></modell>
+        <alvázszám></alvázszám>
+        <gyártásiév></gyártásiév>
+    </autok>
+
+    <autok AUTO_ID="" AUTO_TELEP="" >
+        <rendszam></rendszam>
+        <modell></modell>
+        <alvázszám></alvázszám>
+        <gyártásiév></gyártásiév>
+    </autok>
+
+    <autok AUTO_ID="" AUTO_TELEP="" >
+        <rendszam></rendszam>
+        <modell></modell>
+        <alvázszám></alvázszám>
+        <gyártásiév></gyártásiév>
+    </autok>
+
+    <!-- BÉRLŐ-->
+    <bérlő BÉRLŐ_ID="" BÉRLŐ_AUTO="">
+        <név></név>
+        <telszám></telszám>
+        <email></email>
+        <jogositvanyszam></jogositvanyszam>
+    </bérlő>
+
+    <bérlő BÉRLŐ_ID="" BÉRLŐ_AUTO="">
+        <név></név>
+        <telszám></telszám>
+        <email></email>
+        <jogositvanyszam></jogositvanyszam>
+    </bérlő>
+
+    <bérlő BÉRLŐ_ID="" BÉRLŐ_AUTO="">
+        <név></név>
+        <telszám></telszám>
+        <email></email>
+        <jogositvanyszam></jogositvanyszam>
+    </bérlő>
+
+    <bérlő BÉRLŐ_ID="" BÉRLŐ_AUTO="">
+        <név></név>
+        <telszám></telszám>
+        <email></email>
+        <jogositvanyszam></jogositvanyszam>
+    </bérlő>
+
+    <bérlő BÉRLŐ_ID="" BÉRLŐ_AUTO="">
+        <név></név>
+        <telszám></telszám>
+        <email></email>
+        <jogositvanyszam></jogositvanyszam>
+    </bérlő>
+
+    <bérlő BÉRLŐ_ID="" BÉRLŐ_AUTO="">
+        <név></név>
+        <telszám></telszám>
+        <email></email>
+        <jogositvanyszam></jogositvanyszam>
+    </bérlő>
+
+    <bérlő BÉRLŐ_ID="" BÉRLŐ_AUTO="">
+        <név></név>
+        <telszám></telszám>
+        <email></email>
+        <jogositvanyszam></jogositvanyszam>
+    </bérlő>
+
+    <!-- ALKALMAZOTTAK-->
+    <alkalmazott ALK_ID="" ALK_TELEP=""> 
+        <nev></nev>
+        <beosztás></beosztás>
+        <életkor></életkor>
+        <szülév></szülév>
+    </alkalmazott>
+
+    <alkalmazott ALK_ID="" ALK_TELEP=""> 
+        <nev></nev>
+        <beosztás></beosztás>
+        <életkor></életkor>
+        <szülév></szülév>
+    </alkalmazott>
+
+    <alkalmazott ALK_ID="" ALK_TELEP=""> 
+        <nev></nev>
+        <beosztás></beosztás>
+        <életkor></életkor>
+        <szülév></szülév>
+    </alkalmazott>
+
+    <alkalmazott ALK_ID="" ALK_TELEP=""> 
+        <nev></nev>
+        <beosztás></beosztás>
+        <életkor></életkor>
+        <szülév></szülév>
+    </alkalmazott>
+
+    <alkalmazott ALK_ID="" ALK_TELEP=""> 
+        <nev></nev>
+        <beosztás></beosztás>
+        <életkor></életkor>
+        <szülév></szülév>
+    </alkalmazott>
+
+    <!-- BONUSZ-->
+    <bonusz BONUSZ_ID="" ALKALMAZOTT_FK = "" KÉPESÍTÉS_FK="" >
+        <extra></extra>
+    </bonusz>
+
+    <bonusz BONUSZ_ID="" ALKALMAZOTT_FK = "" KÉPESÍTÉS_FK="" >
+        <extra></extra>
+    </bonusz>
+
+    <bonusz BONUSZ_ID="" ALKALMAZOTT_FK = "" KÉPESÍTÉS_FK="" >
+        <extra></extra>
+    </bonusz>
+
+    <!-- Képesítés-->
+    <képesítés KÉPESÍTÉS_ID="">
+     <bizoszítványszám></bizoszítványszám>
+     <év></év>    
+     <nyelv></nyelv>
+     <típus></típus>   
+    </képesítés>
+
+    <képesítés KÉPESÍTÉS_ID="">
+        <bizoszítványszám></bizoszítványszám>
+        <év></év>    
+        <nyelv></nyelv>
+        <típus></típus>   
+    </képesítés>
+
+    <képesítés KÉPESÍTÉS_ID="">
+        <bizoszítványszám></bizoszítványszám>
+        <év></év>    
+        <nyelv></nyelv>
+        <típus></típus>   
+    </képesítés>
+
+    <képesítés KÉPESÍTÉS_ID="">
+        <bizoszítványszám></bizoszítványszám>
+        <év></év>    
+        <nyelv></nyelv>
+        <típus></típus>   
+    </képesítés>
+
+
+
+
+</H2Z4X3_autokolcsonzo>
