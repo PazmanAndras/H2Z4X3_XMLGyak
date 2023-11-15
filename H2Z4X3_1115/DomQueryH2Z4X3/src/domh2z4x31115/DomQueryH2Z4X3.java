@@ -22,16 +22,28 @@ public class DomQueryH2Z4X3 {
 	public static void main(String[] args) {
 		try {
 			File xmlFile = new File("orarendH2Z4X3.xml");
-			File bOutput = new File("elsoPeldany.xml");
+			
+			File bOutput = new File("elsopeldany.xml");
+			
+			
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			Document document = builder.parse(xmlFile);
 			document.getDocumentElement().normalize();
 			DOMQuery query = new DOMQuery();
+			
 			List<String> courseNames = query.getCourseNames(document);
-			//a
-			System.out.println("a) Kurzusok: "+courseNames+"\n");
-			//b
+			
+			
+			//Kurzusok [Fizika II., Web technológiák 1, stb..
+			System.out.println("a) Kurzusok: "+courseNames+"\n")
+			;
+			
+			
+			
+			
+			
+			//Az eslő egyed 
 			System.out.println("b) Az első elem:");
 			String firstInstance = query.getFirst(document);
 			System.out.println(firstInstance+"\n");
@@ -39,16 +51,28 @@ public class DomQueryH2Z4X3 {
 			writer.write("<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n");
 			writer.write(firstInstance);
 			writer.close();
-			//c
+			
+			
+			
+			
+			//Okatok  [Pszota Gábor, Agárdi Anita, Kunné Dr. Tamás Judit,
 			System.out.println("c) Oktatók: "+query.getTeachers(document)+"\n");
+			
+			/*
+			
 			//d
 			System.out.println("d) Kurzusok időpontjai: "+query.getTimes(document));
+			
+			
+			*/
 		} catch (IOException | SAXException | ParserConfigurationException e) {
 			e.printStackTrace();
 		}
+		
+		
 	}
 	
-	private static class DOMQuery{
+private static class DOMQuery{
 		public List<String> getCourseNames(Document document){
 			List<String> courseNames = new ArrayList<>();
 			Element root = document.getDocumentElement();
@@ -123,6 +147,7 @@ public class DomQueryH2Z4X3 {
 			output+=(indentStr.repeat(indent)+"</ora>");
 			return output;
 		}
+		
 		private static String printTime(Element time, int indent, String indentStr) {
 			String output = "";
 			output+=(indentStr.repeat(indent)+"<idopont>\n");
@@ -137,6 +162,7 @@ public class DomQueryH2Z4X3 {
 			output+=(indentStr.repeat(indent)+"</idopont>\n");
 			return output;
 		}
+		
 		private static String printAttributes(NamedNodeMap attributes) {
 			String output = "";
 			if(attributes.getLength()==0) {
