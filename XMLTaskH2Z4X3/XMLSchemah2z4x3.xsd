@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Egyszerű típusok kigyűjtése, saját típusok meghatározása  -->
+    <xs:element name="kapacitás" type="xs:integer" />
+    <xs:element name="minősítés" type="minősítésTipus" />
+    <xs:element name="név" type="xs:string" />
+    <xs:element name="cim" type="xs:string" />
+    <xs:element name="telszám" type="xs:string" />
+    <xs:element name="adoszam" type="adószámTípus" />
+    <xs:element name="bevétel" type="xs:integer" />
+    <xs:element name="rendszám" type="rendszámTípus" />
+    <xs:element name="modell" type="xs:string" />
+    <xs:element name="alvázszám" type="alvázszámTípus" />
+    <xs:element name="gyártásiév" type="xs:gYear" />
+    <xs:element name="email" type="xs:string" />
+    <xs:element name="jogositvanyszam" type="jogosítványszámTípus" />
+    <xs:element name="beosztás" type="xs:string" />
+    <xs:element name="életkor" type="xs:integer" />
+    <xs:element name="születésiév" type="xs:gYear" />
+    <xs:element name="extra" type="extraTipus" />
+    <xs:element name="bizoszítványszám" type="bizoszítványszámTípus" />
+    <xs:element name="év" type="xs:gYear" />
+    <xs:element name="nyelv" type="xs:string" />
+    <xs:element name="tipus" type="tipusTipus" />
+
+    <xs:simpleType name="minősítésTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A" />
+            <xs:enumeration value="B" />
+            <xs:enumeration value="C" />
+            <xs:enumeration value="D" />
+            <xs:enumeration value="E" />        
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="adószámTípus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\d{8})-(\d)-(\d{2})" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="bevételTipus">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="100000" />
+            <xs:maxInclusive value="10000000" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="rendszámTípus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Z]{3}-\d{3})" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="alvázszámTípus">
+        <xs:restriction base="xs:string">
+            <xs:length value="17" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="jogosítványszámTípus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Z]{2}\d{6})" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="extraTipus">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="10000" />
+            <xs:maxInclusive value="50000" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipusTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A1" />
+            <xs:enumeration value="A2" />
+            <xs:enumeration value="B1" />
+            <xs:enumeration value="B2" />
+            <xs:enumeration value="C1" />
+            <xs:enumeration value="C2" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="bizoszítványszámTípus">
+        <xs:restriction base="xs:string">
+            <xs:length value="7" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Komplex típushoz sajat típus-->
+    <xs:complexType name="telepTípus">
+        <xs:sequence>
+            <xs:element ref="kapacitás" />           
+            <xs:element name="cim">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="település" type="xs:string" />
+                        <xs:element name="utca" type="xs:string" />
+                        <xs:element name="házszám" type="xs:integer" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element ref="minősítés" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="TELEP_ID" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="tulajdonosTípus">
+        <xs:sequence>
+            <xs:element ref="név" />
+            <xs:element ref="telszám" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element ref="adoszam" />
+            <xs:element ref="bevétel" />
+        </xs:sequence>
+        <xs:attribute name="TUL_ID" type="xs:integer" use="required" />
+        <xs:attribute name="TUL_TELEP" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="autokTípus">
+        <xs:sequence>
+            <xs:element ref="rendszám" />
+            <xs:element ref="modell" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element ref="alvázszám" />
+            <xs:element ref="gyártásiév" />           
+        </xs:sequence>
+        <xs:attribute name="AUTO_ID" type="xs:integer" use="required" />
+        <xs:attribute name="AUTO_TELEP" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="bérlőTípus">
+        <xs:sequence>
+            <xs:element ref="név" />
+            <xs:element ref="telszám" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element ref="email" />
+            <xs:element ref="jogositvanyszam" />           
+        </xs:sequence>
+        <xs:attribute name="BÉRLŐ_ID" type="xs:integer" use="required" />
+        <xs:attribute name="BÉRLŐ_AUTO" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="alkalmazottTípus">
+        <xs:sequence>
+            <xs:element ref="név" />
+            <xs:element ref="beosztás" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element ref="életkor" />
+            <xs:element ref="születésiév" />           
+        </xs:sequence>
+        <xs:attribute name="ALK_ID" type="xs:integer" use="required" />
+        <xs:attribute name="ALK_TELEP" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="képesítésTípus">
+        <xs:sequence>
+            <xs:element ref="bizoszítványszám" />
+            <xs:element ref="év" /> 
+            <xs:element ref="nyelv" />
+            <xs:element ref="tipus" />           
+        </xs:sequence>
+        <xs:attribute name="KÉPESÍTÉS_ID" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="bónuszTípus">
+        <xs:sequence>
+            <xs:element ref="extra" />         
+        </xs:sequence>
+        <xs:attribute name="BONUSZ_ID" type="xs:integer" use="required" />
+        <xs:attribute name="KÉPESÍTÉS_FK" type="xs:integer" use="required" />
+        <xs:attribute name="ALKALMAZOTT_FK" type="xs:integer" use="required" />
+    </xs:complexType>
+
+     <!-- Gyökérelemtől az elemek felhasználása -->
+     <xs:element name="H2Z4X3_autokolcsonzo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="telep" type="telepTípus" minOccurs="0" maxOccurs="10"/>
+                <xs:element name="tulajdonos" type="tulajdonosTípus" minOccurs="0" maxOccurs="10"/>
+                <xs:element name="autok" type="autokTípus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="bérlő" type="bérlőTípus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="alkalmazott" type="alkalmazottTípus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="bonusz" type="bónuszTípus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="képesítés" type="képesítésTípus" minOccurs="0" maxOccurs="50"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Elsődleges kulcsok-->
+        <xs:key name="telep_kulcs">
+            <xs:selector xpath="telep"/>
+            <xs:field xpath="@TELEP_ID"/>
+        </xs:key>
+        <xs:key name="tulajdonos_kulcs">
+            <xs:selector xpath="tulajdonos"/>
+            <xs:field xpath="@TUL_ID"/>
+        </xs:key>
+        <xs:key name="autok_kulcs">
+            <xs:selector xpath="fellépő"/>
+            <xs:field xpath="@AUTO_ID"/>
+        </xs:key>
+        <xs:key name="bérlő_kulcs">
+            <xs:selector xpath="bérlő"/>
+            <xs:field xpath="@BÉRLŐ_ID"/>
+        </xs:key>
+        <xs:key name="alkalmazott_kulcs">
+            <xs:selector xpath="alkalmazott"/>
+            <xs:field xpath="@ALK_ID"/>
+        </xs:key>
+        <xs:key name="bonusz_kulcs">
+            <xs:selector xpath="bonusz"/>
+            <xs:field xpath="@BONUSZ_ID"/>
+        </xs:key>
+        <xs:key name="képsítés_kulcs">
+            <xs:selector xpath="képesítés"/>
+            <xs:field xpath="@KÉPESÍTÉS_ID"/>
+        </xs:key>
+
+        
+        <!-- Idegen kulcsok-->
+
+        <xs:keyref name="telep_tulajdonos_kulcs" refer="telep_kulcs">
+            <xs:selector xpath="tulajdonos"/>
+            <xs:field xpath="@telep"/>
+        </xs:keyref>
+        <xs:keyref name="telep_autok_kulcs" refer="telep_kulcs">
+            <xs:selector xpath="autok"/>
+            <xs:field xpath="@telep"/>
+        </xs:keyref>
+
+        <xs:keyref name="telep_alkalmazott_kulcs" refer="telep_kulcs">
+            <xs:selector xpath="alkalmazott"/>
+            <xs:field xpath="@telep"/>
+        </xs:keyref>
+        <xs:keyref name="autok_bérlő_kulcs" refer="autok_kulcs">
+            <xs:selector xpath="bérlő"/>
+            <xs:field xpath="@autok"/>
+        </xs:keyref>
+        <xs:keyref name="alkalmazott_bonusz_kulcs" refer="alkalmazott_kulcs">
+            <xs:selector xpath="bonusz"/>
+            <xs:field xpath="@alkalmazott"/>
+        </xs:keyref>
+        <xs:keyref name="képesítés_bonusz_kulcs" refer="képsítés_kulcs">
+            <xs:selector xpath="bonusz"/>
+            <xs:field xpath="@képsítés"/>
+        </xs:keyref>
+
+
+        <!-- Az 1:1 kapcsolat megvalósítás -->
+        <xs:unique name="telep_tulajdonos_egyegy">
+            <xs:selector xpath="tulajdonos"/>
+            <xs:field xpath="@ftelep"/>
+        </xs:unique>
+        <xs:unique name="autok_bérlő_egyegy">
+            <xs:selector xpath="bérlő"/>
+            <xs:field xpath="@autok"/>
+        </xs:unique>
+
+
+     </xs:element>
+
+
+</xs:schema>
