@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class>
+	<student id='1'>
+		<keresztnév>András</keresztnév>
+		<vezetéknév>Pázmán</vezetéknév>
+		<becenév>apazman</becenév>
+		<kor>21</kor>
+	</student>
+
+	<student id='2'>
+		<keresztnév>Nagy</keresztnév>
+		<vezetéknév>Elemér</vezetéknév>
+		<becenév>Elemér</becenév>
+		<kor>25</kor>
+	</student>
+	
+	<student id='3'>
+		<keresztnév>Kis</keresztnév>
+		<vezetéknév>János</vezetéknév>
+		<becenév>Jani</becenév>
+		<kor>35</kor>
+	</student>
+
+    <student id='4'>
+		<keresztnév>Alma</keresztnév>
+		<vezetéknév>Aranka</vezetéknév>
+		<becenév>Aranka</becenév>
+		<kor>21</kor>
+	</student>
+
+
+	
+	
+</class>
