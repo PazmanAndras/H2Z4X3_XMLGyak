@@ -1,11 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
-<H2Z4X3_autokolcsonzo xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><H2Z4X3_autokolcsonzo xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     
     <!-- TELEP -->
-    <telep TELEP_ID = "1">
+    <telep TELEP_ID="1">
         <kapacitás>5</kapacitás>  
         <cim>
             <település>Budapest</település>
@@ -15,7 +11,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
        <minősítés>B</minősítés>
     </telep>
 
-    <telep TELEP_ID = "2">
+    <telep TELEP_ID="2">
         <kapacitás>8</kapacitás>  
         <cim>
             <település>Budapest</település>
@@ -25,7 +21,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
        <minősítés>A</minősítés>
     </telep>
 
-    <telep TELEP_ID = "3">
+    <telep TELEP_ID="3">
         <kapacitás>6</kapacitás>  
         <cim>
             <település>Szeged</település>
@@ -35,7 +31,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
        <minősítés>C</minősítés>
     </telep>
 
-    <telep TELEP_ID = "4">
+    <telep TELEP_ID="4">
         <kapacitás>7</kapacitás>  
         <cim>
             <település>Siófok</település>
@@ -47,28 +43,28 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
 
 
     <!-- TULAJDONOS-->
-    <tulajdonos TUL_ID="1" TUL_TELEP="1" >
+    <tulajdonos TUL_ID="1" TUL_TELEP="1">
         <név>Kis János</név>
         <telszám>067022344555</telszám>
         <adoszam>12345678-1-11</adoszam>
         <bevétel>1500000</bevétel>
     </tulajdonos>
 
-    <tulajdonos TUL_ID="2" TUL_TELEP="2" >
+    <tulajdonos TUL_ID="2" TUL_TELEP="2">
         <név>Cicz Imre</név>
         <telszám>06205678899</telszám>
         <adoszam>18384763-2-24</adoszam>
         <bevétel>1234560</bevétel>
     </tulajdonos>
 
-    <tulajdonos TUL_ID="3" TUL_TELEP="3" >
+    <tulajdonos TUL_ID="3" TUL_TELEP="3">
         <név>Cset Elek</név>
         <telszám>06703452233</telszám>
         <adoszam>12345679-3-13</adoszam>
         <bevétel>1800000</bevétel>
     </tulajdonos>
 
-    <tulajdonos TUL_ID="4" TUL_TELEP="4" >
+    <tulajdonos TUL_ID="4" TUL_TELEP="4">
         <név>Kis Anikó</név>
         <telszám>06304567788</telszám>
         <adoszam>12341236-2-31</adoszam>
@@ -77,35 +73,35 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
 
 
     <!-- AUTOK-->
-    <autok AUTO_ID="1" AUTO_TELEP="1" >
+    <autok AUTO_ID="1" AUTO_TELEP="1">
         <rendszám>PSY-213</rendszám>
         <modell>Jaguar_F-TYPE</modell>
         <alvázszám>JZMMA18P200411817</alvázszám>
         <gyártásiév>2019</gyártásiév>
     </autok>
 
-    <autok AUTO_ID="2" AUTO_TELEP="2" >
+    <autok AUTO_ID="2" AUTO_TELEP="2">
         <rendszám>RYZ-022</rendszám>
         <modell>Mercedes_S63_AMG</modell>
         <alvázszám>JZMMA18P201111111</alvázszám>
         <gyártásiév>2020</gyártásiév>
     </autok>
 
-    <autok AUTO_ID="3" AUTO_TELEP="3" >
+    <autok AUTO_ID="3" AUTO_TELEP="3">
         <rendszám>SUV-123</rendszám>
         <modell>Volvo_XC-90</modell>
         <alvázszám>KMMMA18P202345234</alvázszám>
         <gyártásiév>2021</gyártásiév>
     </autok>
 
-    <autok AUTO_ID="4" AUTO_TELEP="2" >
+    <autok AUTO_ID="4" AUTO_TELEP="2">
         <rendszám>SRY-345</rendszám>
         <modell>Audi_A5</modell>
         <alvázszám>PZMMA18P200434567</alvázszám>
         <gyártásiév>2020</gyártásiév>
     </autok>
 
-    <autok AUTO_ID="5" AUTO_TELEP="4" >
+    <autok AUTO_ID="5" AUTO_TELEP="4">
         <rendszám>PSY-234</rendszám>
         <modell>BMW_M5_Competition</modell>
         <alvázszám>KMMMA18P200413259</alvázszám>
@@ -115,28 +111,28 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
 
 
     <!-- BÉRLŐ-->
-    <bérlő BÉRLŐ_ID="1" BÉRLŐ_AUTO="2">
+    <bérlő BÉRLŐ_AUTO="2" BÉRLŐ_ID="1">
         <név>Diz Elek</név>
         <telszám>06703439988</telszám>
         <email>dizelek@gmail.com</email>
         <jogositvanyszam>CM001001</jogositvanyszam>
     </bérlő>
 
-    <bérlő BÉRLŐ_ID="2" BÉRLŐ_AUTO="3">
+    <bérlő BÉRLŐ_AUTO="3" BÉRLŐ_ID="2">
         <név>Farkas Piroska</név>
         <telszám>06209876677</telszám>
         <email>piroksa@gfreemail.hu</email>
         <jogositvanyszam>WW001002</jogositvanyszam>
     </bérlő>
 
-    <bérlő BÉRLŐ_ID="3" BÉRLŐ_AUTO="4">
+    <bérlő BÉRLŐ_AUTO="4" BÉRLŐ_ID="3">
         <név>Feles Elek</név>
         <telszám>06708995544</telszám>
         <email>felelek@gmail.com</email>
         <jogositvanyszam>MM020105</jogositvanyszam>
     </bérlő>
 
-    <bérlő BÉRLŐ_ID="4" BÉRLŐ_AUTO="5">
+    <bérlő BÉRLŐ_AUTO="5" BÉRLŐ_ID="4">
         <név>Git Áron</név>
         <telszám>06204563322</telszám>
         <email>gitaron@citromail.hu</email>
@@ -181,15 +177,15 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     </alkalmazott>
 
     <!-- BONUSZ-->
-    <bonusz BONUSZ_ID="1" ALKALMAZOTT_FK = "1" KÉPESÍTÉS_FK="1" >
+    <bonusz ALKALMAZOTT_FK="1" BONUSZ_ID="1" KÉPESÍTÉS_FK="1">
         <extra>10000</extra>
     </bonusz>
 
-    <bonusz BONUSZ_ID="2" ALKALMAZOTT_FK = "2" KÉPESÍTÉS_FK="2" >
+    <bonusz ALKALMAZOTT_FK="2" BONUSZ_ID="2" KÉPESÍTÉS_FK="2">
         <extra>25000</extra>
     </bonusz>
 
-    <bonusz BONUSZ_ID="3" ALKALMAZOTT_FK = "3" KÉPESÍTÉS_FK="3" >
+    <bonusz ALKALMAZOTT_FK="3" BONUSZ_ID="3" KÉPESÍTÉS_FK="3">
         <extra>30000</extra>
     </bonusz>
 
