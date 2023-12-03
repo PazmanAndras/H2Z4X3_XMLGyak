@@ -144,13 +144,11 @@ public class DomReadH2Z4X3 {
 				
 				Node node5 = elem.getElementsByTagName("bevétel").item(0);
 				String node5Text = node5.getTextContent();
-				
-				
+								
 				
 				System.out.println("Tulajdonos_ID: " + tulajdonosid);
 				System.out.println("TUL_TELEP FK: " + fk);
-						
-				
+										
 				System.out.println(" <Név>:" + node1Text + "</Név>:");
 				
 				System.out.println(" <telefonszám> " + node2Text + " </település>");
@@ -389,12 +387,10 @@ public class DomReadH2Z4X3 {
 				
 				Node node5 = elem.getElementsByTagName("tipus").item(0);
 				String node5Text = node5.getTextContent();
-				
-				
+					
 				
 				System.out.println("KÉPESÍTÉS_ID: " + id);
-				
-										
+														
 				System.out.println(" <bizoszítványszám>:" + node1Text + "</bizoszítványszám>");
 				
 				System.out.println(" <év> " + node2Text + " </év>");
