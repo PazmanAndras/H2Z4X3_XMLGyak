@@ -34,6 +34,17 @@ public static void main(String[] args) {
 			
 			//eleri utvonalat megadni
 			
+
+			//#1 Válassza ki a második student elemet, amely a class root element gyermeke
+			//String expression = "class/orarend[position()=2]";
+			
+			//#2  Válassza ki az utolso  student elemet, amely a class root element gyermeke
+			//String expression = "class/orarend[last()]";
+
+			//#3  Válassza ki az  utolsó előtti orarnedd elemet, amely a class root element gyermeke
+			//String expression = "class/orarend[last()-1]";
+
+
 			
 			myNodeList.item(0).setNodeValue("");
 		
@@ -46,11 +57,12 @@ public static void main(String[] args) {
 				if (node.getNodeType() == Node.ELEMENT_NODE && node.getNodeName().equals("student")) {
 					Element element = (Element) node;
 					
-					System.out.println("Hallgat ID: " + element.getAttribute("id"));
-					System.out.println("Keresztnév: " + element.getElementsByTagName("keresztnév").item(0).getTextContent());
-					System.out.println("Vezetéknév: " + element.getElementsByTagName("vezetéknév").item(0).getTextContent());
-					System.out.println("Becenév: " + element.getElementsByTagName("becenév").item(0).getTextContent());
-					System.out.println("Kor: " + element.getElementsByTagName("kor").item(0).getTextContent());				
+					System.out.println("Targy ID: " + element.getAttribute("id"));
+					System.out.println("Targy: " + element.getElementsByTagName("targy").item(0).getTextContent());
+					System.out.println("Idopont: " + element.getElementsByTagName("idopont").item(0).getTextContent());
+					System.out.println("helyszin: " + element.getElementsByTagName("helyszin").item(0).getTextContent());
+					System.out.println("oktato: " + element.getElementsByTagName("oktato").item(0).getTextContent());		
+					System.out.println("szak: " + element.getElementsByTagName("szak").item(0).getTextContent());			
 				}
 				
 			}
