@@ -1,0 +1,138 @@
+{
+    "orarend:h2Z4X3": {
+      "ora": [
+        {
+          "targy": "Fizika II.",
+          "idopont": {
+            "nap": "hétfő",
+            "tol": 8,
+            "ig": 10
+          },
+          "helyszin": "XXX.EA",
+          "oktato": "Pszotas Gábor",
+          "szak": "GEFIT102"
+        },
+        {
+            "targy": "Fizika II.",
+            "idopont": {
+              "nap": "hétfő",
+              "tol": 10,
+              "ig": 12
+            },
+            "helyszin": "A12",
+            "oktato": "Nagy ádám",
+            "szak": "GEFIT102"
+          },
+        {
+          "targy": "Web technológiák 1",
+          "idopont": {
+            "nap": "hétfő",
+            "tol": 14,
+            "ig": 16
+          },
+          "helyszin": "XXX. előadó",
+          "oktato": "Agárdi Anita",
+          "szak": "G3BIW"
+        },
+        {
+          "targy": "Web technológiák 1",
+          "idopont": {
+            "nap": "hétfő",
+            "tol": 16,
+            "ig": 18
+          },
+          "helyszin": "Inf. 202",
+          "oktato": "Agárdi Anita",
+          "szak": "G3BIW"
+        },
+        {
+          "targy": "Mesterséges intelligencia",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 10,
+            "ig": 12
+          },
+          "helyszin": "XXXII. előadó",
+          "oktato": "Kunné Dr. Tamás Judit",
+          "szak": "G3BIW"
+        },
+        {
+          "targy": "Adatkezelés XML-ben",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 12,
+            "ig": 14
+          },
+          "helyszin": "XXXII. előadó",
+          "oktato": "Dr. Bednarik László",
+          "szak": "G3BIW"
+        },
+        {
+          "targy": "Webes alkalmazások c#",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 14,
+            "ig": 16
+          },
+          "helyszin": "inf 101",
+          "oktato": "Árvai László",
+          "szak": "G3BIW"
+        },
+        {
+          "targy": "Webes alkalmazások c#",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 16,
+            "ig": 18
+          },
+          "helyszin": "inf 101",
+          "oktato": "Mileff Péter",
+          "szak": "G3BIW"
+        },
+        {
+          "targy": "Adatkezelés XML-ben",
+          "idopont": {
+            "nap": "szerda",
+            "tol": 10,
+            "ig": 12
+          },
+          "helyszin": "Inf. 101",
+          "oktato": "Dr. Bednarik László",
+          "szak": "G3BIW"
+        },
+        {
+          "targy": "Integrált vállalati rendszerek",
+          "idopont": {
+            "nap": "szerda",
+            "tol": 12,
+            "ig": 14
+          },
+          "helyszin": "X. előadó",
+          "oktato": "Dr. Samad Dadvandipour",
+          "szak": "G3BIW"
+        },
+        {
+          "targy": "Integrált vállalati rendszerek",
+          "idopont": {
+            "nap": "szerda",
+            "tol": 14,
+            "ig": 16
+          },
+          "helyszin": "Inf. 15",
+          "oktato": "Kulcsárné Dr. Forrai Mónika",
+          "szak": "G3BIW"
+        },
+        {
+          "targy": "Mesterséges intelligencia",
+          "idopont": {
+            "nap": "csütörtök",
+            "tol": 10,
+            "ig": 12
+          },
+          "helyszin": "I. előadó",
+          "oktato": "Fazekas Levente",
+          "szak": "G3BIW"
+        }
+      ]
+    }
+  }
