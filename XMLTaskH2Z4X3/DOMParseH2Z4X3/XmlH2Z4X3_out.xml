@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autokolcsonzo_H2Z4X3 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaH2Z4X3.xsd">
+    <!--Telep-->
+    <telep TELEP_ID="1">
+        <kapacitás>5</kapacitás>
+        <cim>
+            <irányítószám>Budapest</irányítószám>
+            <város>Benczúr_utca</város>
+            <utca_házszám>23</utca_házszám>
+        </cim>
+        <mennyiség>B</mennyiség>
+    </telep>
+    <telep TELEP_ID="2">
+        <kapacitás>8</kapacitás>
+        <cim>
+            <irányítószám>Budapest</irányítószám>
+            <város>Jókai_utca</város>
+            <utca_házszám>14</utca_házszám>
+        </cim>
+        <mennyiség>A</mennyiség>
+    </telep>
+    <telep TELEP_ID="3">
+        <kapacitás>6</kapacitás>
+        <cim>
+            <irányítószám>Szeged</irányítószám>
+            <város>Szabadság_utca</város>
+            <utca_házszám>23</utca_házszám>
+        </cim>
+        <mennyiség>C</mennyiség>
+    </telep>
+    <telep TELEP_ID="4">
+        <kapacitás>6</kapacitás>
+        <cim>
+            <irányítószám>Siófok</irányítószám>
+            <város>Balaton_utca</város>
+            <utca_házszám>45</utca_házszám>
+        </cim>
+        <mennyiség>A</mennyiség>
+    </telep>
+    <!--Tulajdonos-->
+    <tulajdonos TELEP_ID="1" TUL_TELEP="1">
+        <név>Kis János</név>
+        <telszám>067022344555</telszám>
+        <adoszám>12345678-1-11</adoszám>
+        <bevétel>1500000</bevétel>
+    </tulajdonos>
+    <tulajdonos TELEP_ID="2" TUL_TELEP="2">
+        <név>Cicz Imre</név>
+        <telszám>06205678899</telszám>
+        <adoszám>18384763-2-24</adoszám>
+        <bevétel>1234560</bevétel>
+    </tulajdonos>
+    <tulajdonos TELEP_ID="3" TUL_TELEP="3">
+        <név>Cset Elek</név>
+        <telszám>06703452233</telszám>
+        <adoszám>2345679-3-13</adoszám>
+        <bevétel>1800000</bevétel>
+    </tulajdonos>
+    <tulajdonos TELEP_ID="4" TUL_TELEP="4">
+        <név>Kis Anikó</név>
+        <telszám>06304567788</telszám>
+        <adoszám>12341236-2-31</adoszám>
+        <bevétel>1850000</bevétel>
+    </tulajdonos>
+    <!--Autok-->
+    <autok AUTO_ID="1" AUTO_TELEP="1">
+        <rendszám>PSY-213</rendszám>
+        <modell>Jaguar_F-TYPE</modell>
+        <alvázszám>JZMMA18P200411817</alvázszám>
+        <gáyrtásiév>2020</gáyrtásiév>
+    </autok>
+    <autok AUTO_ID="2" AUTO_TELEP="2">
+        <rendszám>RYZ-022</rendszám>
+        <modell>Mercedes_S63_AMG</modell>
+        <alvázszám>JZMMA18P200411817</alvázszám>
+        <gáyrtásiév>2021</gáyrtásiév>
+    </autok>
+    <autok AUTO_ID="3" AUTO_TELEP="3">
+        <rendszám>SUV-123</rendszám>
+        <modell>Volvo_XC-90</modell>
+        <alvázszám>JZMMA18P201111111</alvázszám>
+        <gáyrtásiév>2018</gáyrtásiév>
+    </autok>
+    <autok AUTO_ID="4" AUTO_TELEP="4">
+        <rendszám>SRY-345</rendszám>
+        <modell>Audi_A5</modell>
+        <alvázszám>JZMMA18P200411817</alvázszám>
+        <gáyrtásiév>2020</gáyrtásiév>
+    </autok>
+    <autok AUTO_ID="5" AUTO_TELEP="4">
+        <rendszám>PSY-234</rendszám>
+        <modell>BMW_M5_Competition</modell>
+        <alvázszám>PZMMA18P200434567</alvázszám>
+        <gáyrtásiév>2018</gáyrtásiév>
+    </autok>
+    <!--Berlo-->
+    <bérlő BÉRLŐ_AUTO="2" BÉRLŐ_ID="1">
+        <név>Diz Elek</név>
+        <telszám>06703439988</telszám>
+        <email>dizelek@gmail.com</email>
+        <jogositvanyszam>WW001002</jogositvanyszam>
+    </bérlő>
+    <bérlő BÉRLŐ_AUTO="3" BÉRLŐ_ID="2">
+        <név>Farkas Piroska</név>
+        <telszám>06703439988</telszám>
+        <email>piroksa@gfreemail.hu</email>
+        <jogositvanyszam>WW001002</jogositvanyszam>
+    </bérlő>
+    <bérlő BÉRLŐ_AUTO="4" BÉRLŐ_ID="3">
+        <név>Feles Elek</név>
+        <telszám>06703439988</telszám>
+        <email>felelek@gmail.com</email>
+        <jogositvanyszam>MM020105</jogositvanyszam>
+    </bérlő>
+    <bérlő BÉRLŐ_AUTO="5" BÉRLŐ_ID="4">
+        <név>Git Áron</név>
+        <telszám>06204563322</telszám>
+        <email>gitaron@citromail.hu</email>
+        <jogositvanyszam>WW001002</jogositvanyszam>
+    </bérlő>
+    <!--Akalmazott-->
+    <alkalmazottak AUTO_ID="1" AUTO_TELEP="2">
+        <név>Hideg Ottó</név>
+        <beosztás>Adminisztrátor</beosztás>
+        <életkor>48</életkor>
+        <születésiév>1975</születésiév>
+    </alkalmazottak>
+    <alkalmazottak AUTO_ID="2" AUTO_TELEP="3">
+        <név>Kis Eszter</név>
+        <beosztás>Üzletvezető</beosztás>
+        <életkor>45</életkor>
+        <születésiév>1978</születésiév>
+    </alkalmazottak>
+    <alkalmazottak AUTO_ID="3" AUTO_TELEP="1">
+        <név>Pat Tamás</név>
+        <beosztás>supervisor</beosztás>
+        <életkor>35</életkor>
+        <születésiév>1988</születésiév>
+    </alkalmazottak>
+    <alkalmazottak AUTO_ID="4" AUTO_TELEP="4">
+        <név>Tra Pista</név>
+        <beosztás>marketing_manager</beosztás>
+        <életkor>39</életkor>
+        <születésiév>1984</születésiév>
+    </alkalmazottak>
+    <alkalmazottak AUTO_ID="5" AUTO_TELEP="2">
+        <név>Tra Pista</név>
+        <beosztás>hr_vezető</beosztás>
+        <életkor>45</életkor>
+        <születésiév>1978</születésiév>
+    </alkalmazottak>
+    <!--Bonusz-->
+    <bonusz ALKALMAZOTT_FK="1" BONUSZ_ID="1" KÉPESÍTÉS_FK="1">
+        <mikortól>10000</mikortól>
+    </bonusz>
+    <bonusz ALKALMAZOTT_FK="2" BONUSZ_ID="2" KÉPESÍTÉS_FK="2">
+        <mikortól>25000</mikortól>
+    </bonusz>
+    <bonusz ALKALMAZOTT_FK="3" BONUSZ_ID="3" KÉPESÍTÉS_FK="3">
+        <mikortól>30000</mikortól>
+    </bonusz>
+    <!--Képsítés-->
+    <képsítés AUTO_ID="1">
+        <kapacitás>7245889</kapacitás>
+        <kapacitás>2021</kapacitás>
+        <kapacitás>angol</kapacitás>
+        <kapacitás>A2</kapacitás>
+    </képsítés>
+    <képsítés AUTO_ID="2">
+        <kapacitás>7245867</kapacitás>
+        <kapacitás>2015</kapacitás>
+        <kapacitás>magyar</kapacitás>
+        <kapacitás>B2</kapacitás>
+    </képsítés>
+    <képsítés AUTO_ID="3">
+        <kapacitás>7224589</kapacitás>
+        <kapacitás>2010</kapacitás>
+        <kapacitás>angol</kapacitás>
+        <kapacitás>C1</kapacitás>
+    </képsítés>
+    <képsítés AUTO_ID="4">
+        <kapacitás>7298174</kapacitás>
+        <kapacitás>2011</kapacitás>
+        <kapacitás>angol</kapacitás>
+        <kapacitás>B1</kapacitás>
+    </képsítés>
+</autokolcsonzo_H2Z4X3>

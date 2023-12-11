@@ -33,8 +33,7 @@ public class DomQueryH2Z4X3 {
             
             lekerdezes1(document);
             lekerdezes2(document);
-            lekerdezes3(document);
-            lekerdezes4(document);
+            lekerdezes3(document);        
             lekerdezes5(document);
             lekerdezes6(document);
             
@@ -79,8 +78,9 @@ public class DomQueryH2Z4X3 {
 	 		    				String node1Text = node1.getTextContent();    		    				
 	 		    				 				
 	 		    				
-	 		    				System.out.println("Telep_ID: " + telepid);
-	 		    				System.out.println("kapacitás: " + node1Text);
+	 		    				System.out.println("<telep TELEP_ID = "  +telepid + " >");
+	 		    				System.out.println(" <kapacitás> " + node1Text + " </kapacitás>");
+	 		    				System.out.println("</telep>");
 	 		    				
 	 		    				
 	 						}
@@ -133,8 +133,9 @@ public class DomQueryH2Z4X3 {
 		    							String tulajdonosid = elem.getAttribute("TUL_ID");    		    				
 		    		    				Node node1 = elem.getElementsByTagName("név").item(0);
 		    		    				String node1Text = node1.getTextContent();    		    						    				
-		    		    				System.out.println("Tulajdonos_ID: " + tulajdonosid);
-		    		    				System.out.println("név: " + node1Text);	    		    				
+		    		    				System.out.println("<tulajdonos Tulajdonos_ID = > " + tulajdonosid + ">");
+		    		    				System.out.println("  <név> " + node1Text + "</név>");
+		    		    				System.out.println("</tulajdonos>");
 		    						}
 		    					}
 		    				}	
@@ -189,9 +190,10 @@ public class DomQueryH2Z4X3 {
 		    		    				String node2Text = node2.getTextContent();
 		    		    				 				    		    				
 		    		    				
-		    		    				System.out.println("Auto_ID: " + autoid);
-		    		    				System.out.println("Rensszám: " + node1Text);
-		    		    				System.out.println("modell: " + node2Text);			    		    						    		    				
+		    		    				System.out.println("<autok AUTO_ID =  " + autoid + ">");
+		    		    				System.out.println("  <rensszám> " + node1Text + " <rensszám>");
+		    		    				System.out.println("  <modell> " + node2Text + " </modell>" );
+		    		    				System.out.println("</autok>");
 		    						}
 		    					}
 		    				}	
@@ -209,62 +211,7 @@ public class DomQueryH2Z4X3 {
 		
 	}
 
-	public static void lekerdezes4(Document document) {
-		
-		try {
-			
-			  System.out.println("\n3.: A '2'-es ID-jű telep autóinak kiiratása amelyek 2020 vagy attól kisebb évjáratúak.");
-	            NodeList nList3 = document.getElementsByTagName("autok");
-	            
-	            for (int i = 0; i < nList3.getLength(); i++) {
-	    			
-	            	Node nNode = nList3.item(i);
-	            	
-	    			if (nNode.getNodeType()==Node.ELEMENT_NODE) {       				
 
-	    				Element elem = (Element) nNode;
-	    				NodeList childNodes = nNode.getChildNodes();
-	    				
-	    				
-	    				NamedNodeMap attr = nNode.getAttributes();
-	    				Node nodeAtribute = attr.getNamedItem("AUTO_TELEP");
-	    				
-	    				if (nodeAtribute.getTextContent().equals("2")) {
-		    				for (int j = 0; j < childNodes.getLength(); j++) {
-		    					
-		    					Node childNode = childNodes.item(j);	
-		    					
-		    					if ("gyártásiév".equals(childNode.getNodeName())) {
-		
-		    						if (Integer.valueOf(childNode.getTextContent()) <= 2020 ) {
-		    							System.out.println("");
-		    							
-		    							String autoid = elem.getAttribute("AUTO_ID");    		    				
-		    		    				Node node1 = elem.getElementsByTagName("rendszám").item(0);
-		    		    				String node1Text = node1.getTextContent();    		    				
-		    		    				Node node2 = elem.getElementsByTagName("modell").item(0);
-		    		    				String node2Text = node2.getTextContent();
-		    		    				 				    		    				
-		    		    				
-		    		    				System.out.println("Auto_ID: " + autoid);
-		    		    				System.out.println("Rensszám: " + node1Text);
-		    		    				System.out.println("modell: " + node2Text);			    		    						    		    				
-		    						}
-		    					}
-		    				}	
-	    				}
-	    			}
-	    			
-	    		}
-	            System.out.println("*****************************************************************");
-			
-			
-			
-		 } catch (NullPointerException e) {
-			e.printStackTrace();
-		}
-		
-	}
 	
 	public static void lekerdezes5(Document document) {
 		
@@ -299,9 +246,10 @@ public class DomQueryH2Z4X3 {
 	        		    				Node node2 = elem.getElementsByTagName("email").item(0);
 	        		    				String node2Text = node2.getTextContent(); 
 
-	        		    				System.out.println("Bérlő_id: " + telepid);
-	        		    				System.out.println("telszám: " + node1Text);
-	        		    				System.out.println("email: " + node2Text);
+	        		    				System.out.println("<bérlő BÉRLŐ_ID =  " + telepid + " >");
+	        		    				System.out.println("  <telszám> " + node1Text +  " </telszám>");
+	        		    				System.out.println("  <email> " + node2Text + "</email>");
+	        		    				System.out.println("</bérlő>");
 	        						}		   						    						  						
 	    					}
 	    				}	
@@ -348,11 +296,12 @@ public class DomQueryH2Z4X3 {
 		    		    		String node4Text = node4.getTextContent();  
 		    		    				
 		    		    				
-		    		    		System.out.println("Alkalmazott_ID: " + alkalmazottid);
-		    		    		System.out.println("Név: " + node1Text);
-		    		    		System.out.println("Beosztás: " + node2Text);	
-		    		    		System.out.println("Életkor: " + node3Text);
-		    		    		System.out.println("Születési év: " + node4Text);
+		    		    		System.out.println("<alkalmazott ALKALMAZOTT_ID =  " + alkalmazottid + ">");
+		    		    		System.out.println("  <név> " + node1Text + " </név>");
+		    		    		System.out.println("  <beosztás> " + node2Text + " </beosztás>");	
+		    		    		System.out.println("  <életkor> " + node3Text +  " </életkor>");
+		    		    		System.out.println("  <születésiév> " + node4Text + " </születésiév>");
+		    		    		System.out.println("</alkalmazott>");
 		    				}	
 	    				
 	            	}
@@ -366,18 +315,6 @@ public class DomQueryH2Z4X3 {
 		}
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 

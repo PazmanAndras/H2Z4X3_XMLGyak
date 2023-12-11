@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<H2Z4X3_autokolcsonzo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaH2Z4X3.xsd">
+    <Mérkőzik Telep_ID="1" cim="Budapest" kapacitas="5" minosites="Benczúr_utca">
+        <Dátum>23</Dátum>
+        <Játékvezető>B</Játékvezető>
+    </Mérkőzik>
+    <Mérkőzik Telep_ID="2" cim="Budapest" kapacitas="8" minosites="Jókai_utca">
+        <Dátum>14</Dátum>
+        <Játékvezető>A</Játékvezető>
+    </Mérkőzik>
+    <Mérkőzik Telep_ID="3" cim="Szeged" kapacitas="6" minosites="Szabadság_utca">
+        <Dátum>23</Dátum>
+        <Játékvezető>C</Játékvezető>
+    </Mérkőzik>
+    <Mérkőzik Telep_ID="4" cim="Siófok" kapacitas="7" minosites="Balaton_utca">
+        <Dátum>45</Dátum>
+        <Játékvezető>A</Játékvezető>
+    </Mérkőzik>
+</H2Z4X3_autokolcsonzo>
