@@ -13,6 +13,8 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
             <házszám>23</házszám>
        </cim>
        <minősítés>B</minősítés>
+       <minősítés>A</minősítés>
+       <minősítés>A</minősítés>
     </telep>
 
     <telep TELEP_ID = "2">
@@ -23,6 +25,8 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
             <házszám>14</házszám>
        </cim>
        <minősítés>A</minősítés>
+       <minősítés>B</minősítés>
+       <minősítés>C</minősítés>
     </telep>
 
     <telep TELEP_ID = "3">
@@ -33,6 +37,8 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
             <házszám>23</házszám>
        </cim>
        <minősítés>C</minősítés>
+       <minősítés>A</minősítés>
+       <minősítés>B</minősítés>
     </telep>
 
     <telep TELEP_ID = "4">
@@ -43,6 +49,8 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
             <házszám>45</házszám>
        </cim>
        <minősítés>A</minősítés>
+       <minősítés>C</minősítés>
+       <minősítés>B</minősítés>
     </telep>
 
 
@@ -50,6 +58,8 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <tulajdonos TUL_ID="1" TUL_TELEP="1" >
         <név>Kis János</név>
         <telszám>067022344555</telszám>
+        <telszám>067022344345</telszám>
+        <telszám>067022344897</telszám>
         <adoszam>12345678-1-11</adoszam>
         <bevétel>1500000</bevétel>
     </tulajdonos>
@@ -57,6 +67,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <tulajdonos TUL_ID="2" TUL_TELEP="2" >
         <név>Cicz Imre</név>
         <telszám>06205678899</telszám>
+        <telszám>063022344345</telszám>
         <adoszam>18384763-2-24</adoszam>
         <bevétel>1234560</bevétel>
     </tulajdonos>
@@ -64,6 +75,8 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <tulajdonos TUL_ID="3" TUL_TELEP="3" >
         <név>Cset Elek</név>
         <telszám>06703452233</telszám>
+        <telszám>06702234367</telszám>
+        <telszám>062022344897</telszám>
         <adoszam>12345679-3-13</adoszam>
         <bevétel>1800000</bevétel>
     </tulajdonos>
@@ -71,6 +84,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <tulajdonos TUL_ID="4" TUL_TELEP="4" >
         <név>Kis Anikó</név>
         <telszám>06304567788</telszám>
+        <telszám>06702232233</telszám>
         <adoszam>12341236-2-31</adoszam>
         <bevétel>1850000</bevétel>
     </tulajdonos>
@@ -80,6 +94,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <autok AUTO_ID="1" AUTO_TELEP="1" >
         <rendszám>PSY-213</rendszám>
         <modell>Jaguar_F-TYPE</modell>
+        <modell>Jaguar_F-TYPE_sport</modell>
         <alvázszám>JZMMA18P200411817</alvázszám>
         <gyártásiév>2019</gyártásiév>
     </autok>
@@ -87,6 +102,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <autok AUTO_ID="2" AUTO_TELEP="2" >
         <rendszám>RYZ-022</rendszám>
         <modell>Mercedes_S63_AMG</modell>
+        <modell>Mercedes_S63_AMG_musclecar</modell>
         <alvázszám>JZMMA18P201111111</alvázszám>
         <gyártásiév>2020</gyártásiév>
     </autok>
@@ -94,6 +110,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <autok AUTO_ID="3" AUTO_TELEP="3" >
         <rendszám>SUV-123</rendszám>
         <modell>Volvo_XC-90</modell>
+        <modell>xc90_suv</modell>
         <alvázszám>KMMMA18P202345234</alvázszám>
         <gyártásiév>2021</gyártásiév>
     </autok>
@@ -101,6 +118,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <autok AUTO_ID="4" AUTO_TELEP="2" >
         <rendszám>SRY-345</rendszám>
         <modell>Audi_A5</modell>
+        <modell>Audi_A5_sedan</modell>
         <alvázszám>PZMMA18P200434567</alvázszám>
         <gyártásiév>2020</gyártásiév>
     </autok>
@@ -108,6 +126,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <autok AUTO_ID="5" AUTO_TELEP="4" >
         <rendszám>PSY-234</rendszám>
         <modell>BMW_M5_Competition</modell>
+        <modell>M5_cabrio</modell>
         <alvázszám>KMMMA18P200413259</alvázszám>
         <gyártásiév>2018</gyártásiév>
     </autok>
@@ -118,6 +137,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <bérlő BÉRLŐ_ID="1" BÉRLŐ_AUTO="2">
         <név>Diz Elek</név>
         <telszám>06703439988</telszám>
+        <telszám>06304567788</telszám>
         <email>dizelek@gmail.com</email>
         <jogositvanyszam>CM001001</jogositvanyszam>
     </bérlő>
@@ -125,6 +145,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <bérlő BÉRLŐ_ID="2" BÉRLŐ_AUTO="3">
         <név>Farkas Piroska</név>
         <telszám>06209876677</telszám>
+        <telszám>06304567788</telszám>
         <email>piroksa@gfreemail.hu</email>
         <jogositvanyszam>WW001002</jogositvanyszam>
     </bérlő>
@@ -132,6 +153,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <bérlő BÉRLŐ_ID="3" BÉRLŐ_AUTO="4">
         <név>Feles Elek</név>
         <telszám>06708995544</telszám>
+        <telszám>06304567788</telszám>
         <email>felelek@gmail.com</email>
         <jogositvanyszam>MM020105</jogositvanyszam>
     </bérlő>
@@ -139,6 +161,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <bérlő BÉRLŐ_ID="4" BÉRLŐ_AUTO="5">
         <név>Git Áron</név>
         <telszám>06204563322</telszám>
+        <telszám>06708995544</telszám>
         <email>gitaron@citromail.hu</email>
         <jogositvanyszam>KK011501</jogositvanyszam>
     </bérlő>
@@ -148,6 +171,8 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <alkalmazott ALK_ID="1" ALK_TELEP="2"> 
         <név>Hideg Ottó</név>
         <beosztás>Adminisztrátor</beosztás>
+        <beosztás>hr_team_lead</beosztás>
+        <beosztás>hr_supervisor</beosztás>
         <életkor>48</életkor>
         <születésiév>1975</születésiév>
     </alkalmazott>
@@ -155,6 +180,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <alkalmazott ALK_ID="2" ALK_TELEP="3"> 
         <név>Kis Eszter</név>
         <beosztás>Üzletvezető</beosztás>
+        <beosztás>finance_accountant</beosztás>
         <életkor>45</életkor>
         <születésiév>1978</születésiév>
     </alkalmazott>
@@ -162,6 +188,8 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <alkalmazott ALK_ID="3" ALK_TELEP="1"> 
         <név>Pat Tamás</név>
         <beosztás>supervisor</beosztás>
+        <beosztás>hr_manager</beosztás>
+        <beosztás>facility_manager</beosztás>
         <életkor>35</életkor>
         <születésiév>1988</születésiév>
     </alkalmazott>
@@ -169,6 +197,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <alkalmazott ALK_ID="4" ALK_TELEP="4"> 
         <név>Tra Pista</név>
         <beosztás>marketing_manager</beosztás>
+        <beosztás>marketing_consultant</beosztás>
         <életkor>39</életkor>
         <születésiév>1984</születésiév>
     </alkalmazott>
@@ -176,6 +205,7 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <alkalmazott ALK_ID="5" ALK_TELEP="2"> 
         <név>Viz Elma</név>
         <beosztás>hr_vezető</beosztás>
+        <beosztás>hr_administrator</beosztás>
         <életkor>45</életkor>
         <születésiév>1978</születésiév>
     </alkalmazott>
@@ -196,28 +226,32 @@ xs:noNamespaceSchemaLocation="XMLSchemah2z4x3.xsd">
     <!-- Képesítés-->
     <képesítés KÉPESÍTÉS_ID="1">
      <bizoszítványszám>7245889</bizoszítványszám>
-     <év>2021</év>    
+     <év>2021</év>
+     <év>2022</év>   
      <nyelv>angol</nyelv>
      <tipus>A2</tipus>   
     </képesítés>
 
     <képesítés KÉPESÍTÉS_ID="2">
         <bizoszítványszám>7245867</bizoszítványszám>
-        <év>2015</év>    
+        <év>2015</év>
+        <év>2011</év>    
         <nyelv>magyar</nyelv>
         <tipus>B2</tipus>    
     </képesítés>
 
     <képesítés KÉPESÍTÉS_ID="3">
         <bizoszítványszám>7224589</bizoszítványszám>
-        <év>2010</év>    
+        <év>2010</év>
+        <év>2020</év>     
         <nyelv>angol</nyelv>
         <tipus>C1</tipus>   
     </képesítés>
 
     <képesítés KÉPESÍTÉS_ID="4">
         <bizoszítványszám>7298174</bizoszítványszám>
-        <év>2011</év>    
+        <év>2011</év>
+        <év>2013</év> 
         <nyelv>angol</nyelv>
         <tipus>B1</tipus>  
     </képesítés>
